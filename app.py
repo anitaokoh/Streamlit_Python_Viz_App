@@ -2,20 +2,20 @@ import streamlit as st
 import gendergap
 
 
-
+# the controller of the homepage
 def main():
     createlayout()
-    others()
+    side_bar_homepage()
 
-
-def others():
+#the homepage side bar
+def side_bar_homepage():
     st.sidebar.title("About Author")
     st.sidebar.info("""Hi, I am Anita Okoh.  I enjoy learning about data science with python.
     This includes using python to visulize data. I also enjoy converting my pain-points into useful products.
     You can connect with me via [LinkedIn](https://www.linkedin.com/in/anita-okoh/), [Github](https://www.linkedin.com/in/anita-okoh/) or [website](https://www.okohanita.com/)""")
 
 
-
+# the content of the homepage
 def homepage():
     st.image("images/logo1.png",use_column_width=True)
     st.markdown("> Visualization gives you answers to questions you didn’t know you had")
@@ -50,6 +50,7 @@ def homepage():
                 "<img src='https://img.shields.io/badge/POWERED%20BY-Streamlit-green?style=for-the-badge'"
                 "alt='API stability' height='25'/></div>", unsafe_allow_html=True)
 
+#the layout of the whole app
 def createlayout():
     st.sidebar.title("Menu")
     app_mode = st.sidebar.selectbox("Please select a page", ["Homepage", "Gender Gap"])

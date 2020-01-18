@@ -55,7 +55,7 @@ code_2 = """
                                 text=gap_index['text'], # hover text
                                 marker_line_color='white',
                                 coloraxis = "coloraxis",
-                                reversescale=True, # line markers between states
+                                reversescale=True,
                                row=2, col=1
                               )
             fig.update_layout(coloraxis = {'colorscale':'viridis', 'reversescale': True},
@@ -85,12 +85,12 @@ code_2 = """
                                                         )
                                )
 """
-
+# the controller
 def load_page():
     sidebar_info()
     body()
 
-
+# the side bar information for the gendergap page
 def sidebar_info():
     st.sidebar.subheader('Gender Gap Index')
     st.sidebar.markdown("""
@@ -102,7 +102,7 @@ def sidebar_info():
 
                    **Library Used**: Plotly
                    """)
-
+# the distribution with the same axes
 def viz1():
     fig = make_subplots(rows=1, cols=2, specs=[[{"type": "Box", "colspan": 1}, {"type": "Scatter", "colspan": 1}]],
                     subplot_titles=('The distribution of the gender gap index overtime', "The Average Gender gap index trend"),
@@ -125,6 +125,7 @@ def viz1():
 
     return fig
 
+# The distribution with different axes
 def viz2():
     fig = make_subplots(rows=1, cols=2, specs=[[{"type": "Box", "colspan": 1}, {"type": "Scatter", "colspan": 1}]],
                     subplot_titles=('The distribution of the gender gap index overtime', "The Average Gender gap index trend"),
@@ -147,6 +148,7 @@ def viz2():
 
     return fig
 
+# The map visualization
 def viz3():
     gap_index['text'] = gap_index['Country'] + '<br>' + \
       gap_index['2010'].astype(str)
@@ -205,7 +207,7 @@ def viz3():
     )
     return fig
 
-
+# the content of the page
 def body():
     st.image("images/logo3.png",use_column_width=True)
     st.write("""The visualisation was based on the recent research paper the world forum
