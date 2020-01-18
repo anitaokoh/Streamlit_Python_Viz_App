@@ -3,7 +3,6 @@ import pandas as pd
 import plotly as py
 import numpy as np
 import plotly.graph_objs as go
-from PIL import Image
 from plotly.subplots import make_subplots
 
 # Data Source

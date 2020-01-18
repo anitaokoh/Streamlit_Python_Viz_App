@@ -45,17 +45,17 @@ def homepage():
     st.markdown("<div align='center'><br>"
                 "<img src='https://img.shields.io/badge/MADE%20WITH-PYTHON%20-red?style=for-the-badge'"
                 "alt='API stability' height='25'/>"
-                "<img src='https://img.shields.io/badge/SERVED%20WITH-Heroku-blue?style=for-the-badge'"
+                "<img src='https://img.shields.io/badge/HOSTED%20ON-Heroku-blue?style=for-the-badge'"
                 "alt='API stability' height='25'/>"
                 "<img src='https://img.shields.io/badge/POWERED%20BY-Streamlit-green?style=for-the-badge'"
                 "alt='API stability' height='25'/></div>", unsafe_allow_html=True)
 
 def createlayout():
     st.sidebar.title("Menu")
-    app_mode = st.sidebar.selectbox("Please select a page", ["Homepage", "Visualization 1"])
+    app_mode = st.sidebar.selectbox("Please select a page", ["Homepage", "Gender Gap"])
     if app_mode == 'Homepage':
         homepage()
-    elif app_mode == "Visualization 1":
+    elif app_mode == "Gender Gap":
         gendergap.load_page()
 
 
