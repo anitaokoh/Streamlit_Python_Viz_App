@@ -4,7 +4,6 @@ This year, I decided to improve my visualization skills using python alone. I bu
 
 Below is a demo of the web app
 
-Here is the link to the app.
 <div align="center">
   <br>
   <img src="https://img.shields.io/badge/MADE%20WITH-PYTHON%20-red?style=for-the-badge"
@@ -15,9 +14,7 @@ Here is the link to the app.
       alt="API stability" height="25"/>
 </div>
 
-
-
-
+Here is the link to the app.
 
 **- The First Visualization is about**
 <img src="https://github.com/anitaokoh/Streamlit_Python_Viz_App/blob/master/images/logo3.png">
