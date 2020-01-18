@@ -3,7 +3,6 @@
 This year, I decided to improve my visualization skills using python alone. I built a web app using strean to showcase and store my Python Visualizations.
 
 Below is a demo of the web app
-
 <div align="center">
   <br>
   <img src="https://img.shields.io/badge/MADE%20WITH-PYTHON%20-red?style=for-the-badge"
