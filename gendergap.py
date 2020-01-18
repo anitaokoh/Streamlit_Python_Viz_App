@@ -235,8 +235,8 @@ def body():
         st.plotly_chart(fig)
         st.text("""
                    Key Insight
-                   🔹2019 seems to be the best year so far for the world as whole
-                   in terms of gender equality.
+                   🔹2019 seems to be the best year so far for the world as whole in terms of gender
+                     equality.
 
                  """)
         if st.checkbox('See more'):
@@ -246,6 +246,10 @@ def body():
             elif choice == 'Chart with different y axes':
                 fi = viz2()
                 st.plotly_chart(fi)
+                st.text("""
+                           Key Insight
+                           🔹The Average index growths seems to be more obvious
+                         """)
                 st.text('N:B Also the Average index would also not approximated in this chart')
 
     if st.checkbox('Countries Indices in 2010 and Now'):
@@ -255,10 +259,10 @@ def body():
                    Insights \n
                    🔹At first glance at both charts, it would seem that the world as a whole is going 'bluer'
                      i.e tending towards 1.
-                   🔹The Scandanavia regions tend to be doing better than the rest of the world in terms of gender
-                     equality.
-                   🔹The Northern Africa and middle east region, although have progressed in the last decade, are
-                     still the worst compared to the rest of the world.
+                   🔹The Scandanavia regions tend to be doing better than the rest of the world in terms of
+                     gender equality.
+                   🔹The Northern Africa and middle east region, although have progressed in the last decade,
+                     are still the worst compared to the rest of the world.
                    🔹As at the last report, Iceland have the highest score of 0.88 and Yemen with the lowest
                      score of 0.49.
                    🔹 Not all countries are been captured yet. But more countries now, compared to 2010
