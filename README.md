@@ -17,7 +17,7 @@ Here is the link to the app.
 
 
 - The First Visualization is about
-
+<img src="https://github.com/anitaokoh/Streamlit_Python_Viz_App/blob/master/images/logo3.png">
 
 You can find the source code to every visualisation on the app or on this repo . You can also watch this space to get updated when the next visualisation drops
 
