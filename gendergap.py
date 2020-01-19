@@ -210,10 +210,10 @@ def viz3():
 # the content of the page
 def body():
     st.image("images/logo3.png",use_column_width=True)
-    st.write("""The visualisation was based on the recent research paper the world forum
-   published this year which revolved around gender gap index. \n\n The first Global Gender Gap Report was published in 2006 by the World Economic Forum which included about 114 countries.
-   As at this years report, over 140 countries were included. \n\n
-   The Global Gender Gap Index is an index designed to measure gender equality. Index ranks countries according to calculated gender gap between women and men in four key areas: \n\n
+    st.write("""The below visualisations were based on the recent report the World Economic Forum(WEF)
+   published this year which revolved around gender gap index. \n\n The first Global Gender Gap Report was published in 2006 by the WEF which included about 114 countries.
+   As at this year's report, over 140 countries were included. \n\n
+   The Global Gender Gap Index is an index designed to measure gender equality. The index ranks countries according to calculated gender gap between women and men in four key areas: \n\n
    ♟ **Economic participation and opportunity** – outcomes on salaries, participation levels and access to high-skilled employment \n
    ♟ **Educational attainment** – outcomes on access to basic and higher level education \n
    ♟ **Political empowerment** – outcomes on representation in decision-making structures \n
@@ -222,7 +222,7 @@ def body():
    You can find all data sources and more info via [Wikipedia](https://en.wikipedia.org/wiki/Global_Gender_Gap_Report) and [WEF report](https://en.wikipedia.org/wiki/Global_Gender_Gap_Report)
    Using Plotly, I was about to answer two questions \n
    ♟ _**Has the world index as a whole improved in the last decade?**_ \n
-   ♟ _**How has individual countries fared currently compared to 2010 and are the countries overall geting better or worse?**_
+   ♟ _**How have individual countries fared currently compared to 2010 and are the countries overall geting better or worse?**_
     """)
 
     st.header("Data Exploration")
