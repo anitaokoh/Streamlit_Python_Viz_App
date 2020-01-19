@@ -11,7 +11,7 @@ def main():
 def side_bar_homepage():
     st.sidebar.title("About Author")
     st.sidebar.info("""Hi, I am Anita Okoh.  I enjoy learning about data science with python.
-    This includes using python to visulize data. I also enjoy converting my pain-points into useful products.
+    This includes using python to visualize data. I also enjoy converting my pain-points into useful products.
     You can connect with me via [LinkedIn](https://www.linkedin.com/in/anita-okoh/), [Github](https://www.linkedin.com/in/anita-okoh/) or [website](https://www.okohanita.com/)""")
 
 
