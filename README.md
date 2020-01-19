@@ -13,7 +13,7 @@ Below is a demo of the web app
       alt="API stability" height="25"/>
 </div>
 
-Here is the link to the app.
+Here is the [link](http://www.visualizationwithpython.com/) to the app.
 
 **- The First Visualization is about**
 <img src="https://github.com/anitaokoh/Streamlit_Python_Viz_App/blob/master/images/logo3.png">
