@@ -3,6 +3,7 @@
 This year, I decided to improve my visualization skills using python alone. I built a web app using strean to showcase and store my Python Visualizations.
 
 Below is a demo of the web app
+
 ![](https://github.com/anitaokoh/Streamlit_Python_Viz_App/blob/master/demo.gif)
 <div align="center">
   <br>
