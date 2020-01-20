@@ -229,7 +229,7 @@ def body():
     if st.checkbox("See how the data looks like"):
         st.dataframe(gap_index.iloc[:,1:].head())
         st.write(gap_index.shape)
-        st.text('Please note that all index has been approxiated to 2 decimal places')
+        st.text('Please note that all indices have been approximated to 2 decimal places')
     if st.checkbox('World index distribution in the last decade'):
         fig = viz1()
         st.plotly_chart(fig)
