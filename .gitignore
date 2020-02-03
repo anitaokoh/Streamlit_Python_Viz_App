@@ -132,3 +132,7 @@ dmypy.json
 Economic Participation and Opportunity.txt
 Educational Attainment.txt
 goal.txt
+
+#work in progress
+*data*.csv
+data*.ipynb
