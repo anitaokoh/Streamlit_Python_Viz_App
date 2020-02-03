@@ -3,6 +3,8 @@
 This year, I decided to improve my visualization skills using python alone. I built a web app using strean to showcase and store my Python Visualizations.
 
 Below is a demo of the web app
+
+![](https://github.com/anitaokoh/Streamlit_Python_Viz_App/blob/master/demo.gif)
 <div align="center">
   <br>
   <img src="https://img.shields.io/badge/MADE%20WITH-PYTHON%20-red?style=for-the-badge"
@@ -13,7 +15,7 @@ Below is a demo of the web app
       alt="API stability" height="25"/>
 </div>
 
-Here is the link to the app.
+Here is the [link](http://www.visualizationwithpython.com/) to the app.
 
 **- The First Visualization is about**
 <img src="https://github.com/anitaokoh/Streamlit_Python_Viz_App/blob/master/images/logo3.png">

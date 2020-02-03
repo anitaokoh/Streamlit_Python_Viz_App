@@ -11,7 +11,7 @@ def main():
 def side_bar_homepage():
     st.sidebar.title("About Author")
     st.sidebar.info("""Hi, I am Anita Okoh.  I enjoy learning about data science with python.
-    This includes using python to visulize data. I also enjoy converting my pain-points into useful products.
+    This includes using python to visualize data. I also enjoy converting my pain-points into useful products.
     You can connect with me via [LinkedIn](https://www.linkedin.com/in/anita-okoh/), [Github](https://www.linkedin.com/in/anita-okoh/) or [website](https://www.okohanita.com/)""")
 
 
@@ -24,12 +24,12 @@ def homepage():
             and I tend not to spend as much time as I want to visualizing the _"crap out of the data"_.
              """)
     st.write("""
-             Whenever I want to indulge in data visualization, my default tend to be tableau and not very often.
-             This year, (2020), I have decided to take visualization a little more focus and also visualizing using python more. \n
-             By the end of the year,
-             - It would be great to see if I can completely switch to python visualizing libraries
-             - How much I have improved in this aspect in terms of diving into libraries documentations,
-             understanding the difference libraries strengths and weakness etc
+             Whenever I want to indulge in data visualization, my default tend to be using tableau and this is not very often.
+             This year, (2020), I have decided to give visualization a little more focus and also visualize using python more. \n
+             By the end of the year, It would be great to see
+             - If I can completely switch to using just python visualization libraries
+             - How much I have improved in this aspect in terms of diving into library documentations,
+             understanding the different libraries strengths and weakness etc
 
              Below are some of the tools I would be exploring:
             """)
