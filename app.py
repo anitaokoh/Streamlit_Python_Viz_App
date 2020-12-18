@@ -13,6 +13,12 @@ def side_bar_homepage():
     st.sidebar.info("""Hi, I am Anita Okoh.  I enjoy learning about data science with python.
     This includes using python to visualize data. I also enjoy converting my pain-points into useful products.
     You can connect with me via [LinkedIn](https://www.linkedin.com/in/anita-okoh/), [Github](https://www.linkedin.com/in/anita-okoh/) or [website](https://www.okohanita.com/)""")
+    html_temp2 = """
+   <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+   <script type='text/javascript'>kofiwidget2.init(' Buy me coffee?', '#29abe0', 'H2H12Z70I');kofiwidget2.draw();</script> 
+   """
+
+    components.html(html_temp2)
 
 
 # the content of the homepage
