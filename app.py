@@ -1,5 +1,6 @@
 import streamlit as st
 import gendergap
+import youtube_earnings
 
 
 # # the controller of the homepage
@@ -63,6 +64,8 @@ def createlayout():
         homepage()
     elif app_mode == "Gender Gap":
         gendergap.load_page()
+    elif app_mode == "Popular YouTubers":
+        youtube_earnings.load_page()
         
         
  # the controller of the homepage
