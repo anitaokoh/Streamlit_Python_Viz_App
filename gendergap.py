@@ -85,17 +85,17 @@ code_2 = """
                                                         )
                                )
 """
-# the controller
-def load_page():
-    sidebar_info()
-    body()
+# # the controller
+# def load_page():
+#     sidebar_info()
+#     body()
 
 # the side bar information for the gendergap page
 def sidebar_info():
     st.sidebar.subheader('Gender Gap Index')
     st.sidebar.markdown("""
                    This visualization is made on the WEF
-                   recent report on Glabal Gender Gap
+                   recent report on Global Gender Gap
                    index.
 
                    **Years considered**: 2010 - 2019
@@ -272,6 +272,12 @@ def body():
             st.code(code_2)
     st.write('You can find the repo [here](https://github.com/anitaokoh/Streamlit_Python_Viz_App)')
 
+# the controller
+def load_page():
+    sidebar_info()
+    body()
+
+
 
 if __name__ == "__main__":
-    main()
+    load_page()
