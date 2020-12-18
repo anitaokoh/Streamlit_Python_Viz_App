@@ -19,7 +19,7 @@ def side_bar_homepage():
    <script type='text/javascript'>kofiwidget2.init(' Buy me coffee?', '#29abe0', 'H2H12Z70I');kofiwidget2.draw();</script> 
    """
 
-    components.html(html_temp2)
+    st.sidebar.markdown(html_temp2)
 
 
 # the content of the homepage
