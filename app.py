@@ -1,6 +1,5 @@
 import streamlit as st
 import gendergap
-import streamlit.components.v1 as components
 
 
 # # the controller of the homepage
@@ -19,7 +18,7 @@ def side_bar_homepage():
    <script type='text/javascript'>kofiwidget2.init(' Buy me coffee?', '#29abe0', 'H2H12Z70I');kofiwidget2.draw();</script> 
    """
 
-    st.sidebar.markdown(html_temp2)
+    st.sidebar.markdown(html_temp2,unsafe_allow_html=True)
 
 
 # the content of the homepage
