@@ -13,12 +13,11 @@ def side_bar_homepage():
     st.sidebar.info("""Hi, I am Anita Okoh.  I enjoy learning about data science with python.
     This includes using python to visualize data. I also enjoy converting my pain-points into useful products.
     You can connect with me via [LinkedIn](https://www.linkedin.com/in/anita-okoh/) and [Github](https://github.com/anitaokoh)""")
-    html_temp2 = """
-   <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
-   <script type='text/javascript'>kofiwidget2.init(' Buy me coffee?', '#29abe0', 'H2H12Z70I');kofiwidget2.draw();</script> 
-   """
+    html_temp1 = """
+    [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H12Z70I)
+    """
 
-    st.sidebar.markdown(html_temp2)
+    st.sidebar.markdown(html_temp1)
 
 
 # the content of the homepage
@@ -64,6 +63,8 @@ def createlayout():
         homepage()
     elif app_mode == "Gender Gap":
         gendergap.load_page()
+        
+        
  # the controller of the homepage
 def main():
     createlayout()
