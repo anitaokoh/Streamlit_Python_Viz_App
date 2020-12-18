@@ -1,11 +1,12 @@
 import streamlit as st
 import gendergap
+import streamlit.components.v1 as components
 
 
-# the controller of the homepage
-def main():
-    createlayout()
-    side_bar_homepage()
+# # the controller of the homepage
+# def main():
+#     createlayout()
+#     side_bar_homepage()
 
 #the homepage side bar
 def side_bar_homepage():
@@ -64,6 +65,10 @@ def createlayout():
         homepage()
     elif app_mode == "Gender Gap":
         gendergap.load_page()
+ # the controller of the homepage
+def main():
+    createlayout()
+    side_bar_homepage()
 
 
 if __name__ == "__main__":
