@@ -21,15 +21,15 @@ def main():
 
      
     st.image("images/logo4.png",use_column_width=True)
-    st.write("""The below interactive dashboard displays the most popular youtuber in every country which was aggregated by continents. \n\n The Popularity measureas used for the original data collection were: \n\n
+    st.write("""The below interactive dashboard displays the most popular youtuber in every country aggregated by continents. \n\n The Popularity measures used for the original data collection were: \n\n
    ♟ **Number of subscribers.**  \n
    ♟ **Estimated Daily  and Monthly Earnings.** \n
    ♟ **Youtube CPM etc.** \n
    It is good to note that not all country data were collected. You can learn more about the Data source below.\n\n
-   _**For this dasboard , only the Subcribers and the Estimated Daily Earnings were used as Metrics by sum and  averages.**_\n\n
+   _**For this dasboard , only the no of Subcribers and the Estimated Daily Earnings were used as Metrics(in terms of sums and averages).**_\n\n
    **Key Insights** \n\n
-   ♟ MarkAngelComedy is the most popular Channel in Nigeria. It is also the top 3 popular channel in Africa in  terms of number of subscribers and has the highest Estimated Daily Earnings.\n
-   ♟ Although Europe has the most no of subscribers(in terms of aggregate subrcribers of all the popular youtube channels), all the most populat youtubers in europe fall within 9 of the 14 channel categories. Entertainment is the most frequent category.\n
+   ♟ Based on the data, MarkAngelComedy is the most popular Channel in Nigeria. It is also the top 3 popular channel in Africa in  terms of number of subscribers and has the highest Estimated Daily Earnings in Africa.\n
+   ♟ Although Europe has the most no of subscribers(in terms of aggregate subrcribers of all the popular youtube channels), the popular youtuber channels in europe fall within only  9 of the 14 channel categories. Entertainment is the most frequent category.\n
    Go ahead and play with the fliters and metrics\n\n
     """)
 
@@ -70,7 +70,7 @@ def main():
 </script>
     """
     components.html(html_temp, width=1130, height=700)
-    st.markdown(f'Link to the interactive dashboard [here](https://public.tableau.com/views/Top1YoutubeInfluencerinallCountries/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link)')
+    st.markdown(f'Link to the public dashboard [here](https://public.tableau.com/views/Top1YoutubeInfluencerinallCountries/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link)')
     st.markdown(f"**Data source and information about data collect can be found on [AccreditedDebtRelief website](https://www.accrediteddebtrelief.com/blog/every-countrys-most-popular-youtuber/)**")
 
     max_width_str = f"max-width: 1030px;"
