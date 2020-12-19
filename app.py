@@ -68,7 +68,7 @@ def homepage():
 
 #the layout of the whole app
 def createlayout():
-    st.sidebar.title("Menu")
+#     st.sidebar.title("Menu")
     query_params = st.experimental_get_query_params()
     app_check = st.experimental_get_query_params()
 
@@ -76,6 +76,7 @@ def createlayout():
     first_query_params = session_state.first_query_params
 
     app_check = {k: v[0] if isinstance(v, list) else v for k, v in app_check.items()}
+    st.sidebar.title("Menu")
     page_list = ["Homepage", "Gender Gap", "Popular YouTubers"]
 #     default_selectbox = int(app_check["selectbox"]) if "selectbox" in app_check else 0
     default_selectbox = int(app_check["selectbox"]) if "selectbox" in app_check else 0
@@ -86,7 +87,7 @@ def createlayout():
         app_check["selectbox"] = page_list.index(app_mode)
         st.experimental_set_query_params(**app_check)
 #     app_mode = st.sidebar.selectbox("Please select a page", ["Homepage", "Gender Gap", "Popular YouTubers"])
-        if app_mode == 'Homepage':
+        if app_mode == "Homepage":
             homepage()
         elif app_mode == "Gender Gap":
             gendergap.load_page()
