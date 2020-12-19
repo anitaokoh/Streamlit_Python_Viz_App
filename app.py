@@ -4,13 +4,13 @@ import youtube_earnings
 import SessionState
 
 
-query_params = st.experimental_set_query_params()
-app_check = st.experimental_get_query_params()
+# query_params = st.experimental_set_query_params()
+# app_check = st.experimental_get_query_params()
 
-session_state = SessionState.get(first_query_params=query_params)
-first_query_params = session_state.first_query_params
+# session_state = SessionState.get(first_query_params=query_params)
+# first_query_params = session_state.first_query_params
 
-app_check = {k: v[0] if isinstance(v, list) else v for k, v in app_check.items()}
+# app_check = {k: v[0] if isinstance(v, list) else v for k, v in app_check.items()}
 
 
 # # the controller of the homepage
@@ -69,6 +69,13 @@ def homepage():
 #the layout of the whole app
 def createlayout():
     st.sidebar.title("Menu")
+    query_params = st.experimental_set_query_params()
+    app_check = st.experimental_get_query_params()
+
+    session_state = SessionState.get(first_query_params=query_params)
+    first_query_params = session_state.first_query_params
+
+    app_check = {k: v[0] if isinstance(v, list) else v for k, v in app_check.items()}
     page_list = ["Homepage", "Gender Gap", "Popular YouTubers"]
     default_radio = int(app_check["selectbox"]) if "selectbox" in app_check else 0
     app_mode = st.sidebar.selectbox("Please select a page", page_list,index = default_radio)
