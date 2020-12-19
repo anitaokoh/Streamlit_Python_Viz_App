@@ -77,10 +77,10 @@ def createlayout():
 
     app_check = {k: v[0] if isinstance(v, list) else v for k, v in app_check.items()}
     page_list = ["Homepage", "Gender Gap", "Popular YouTubers"]
-    default_radio = int(app_check["selectbox"]) if "selectbox" in app_check else 0
-    app_mode = st.sidebar.selectbox("Please select a page", page_list,index = default_radio)
+    default_selectbox = int(app_check["selectbox"]) if "selectbox" in app_check else 0
+    app_mode = st.sidebar.selectbox("Please select a page", page_list,index = default_selectbox)
     if app_mode:
-        app_check["selectbox"] = str(app_mode)
+        app_check["selectbox"] = page_list.index(app_mode)
         st.experimental_set_query_params(**app_check)
 #     app_mode = st.sidebar.selectbox("Please select a page", ["Homepage", "Gender Gap", "Popular YouTubers"])
         if app_mode == 'Homepage':
