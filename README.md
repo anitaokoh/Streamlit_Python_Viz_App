@@ -21,7 +21,7 @@ Here is the [link](http://www.visualizationwithpython.com/) to the app.
 <img src="https://github.com/anitaokoh/Streamlit_Python_Viz_App/blob/master/images/logo3.png">
 
 **- The Second Visualization is about**
-<img scr="https://github.com/anitaokoh/Streamlit_Python_Viz_App/blob/master/images/logo4.png">
+![](https://github.com/anitaokoh/Streamlit_Python_Viz_App/blob/master/images/logo4.png)
 
 You can find the source code to every visualisation on the app or on this repo . You can also watch this space to get updated when the next visualisation drops
 
