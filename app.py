@@ -4,7 +4,7 @@ import youtube_earnings
 import SessionState
 
 
-query_params = st.experimental_set_query_params()
+query_params = st.experimental_get_query_params()
 app_check = st.experimental_get_query_params()
 
 session_state = SessionState.get(first_query_params=query_params)
