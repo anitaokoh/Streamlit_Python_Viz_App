@@ -69,7 +69,7 @@ def homepage():
 #the layout of the whole app
 def createlayout():
 #     st.sidebar.title("Menu")
-    query_params = st.experimental_set_query_params()
+    query_params = st.experimental_get_query_params()
     app_check = st.experimental_get_query_params()
 
     session_state = SessionState.get(first_query_params=query_params)
