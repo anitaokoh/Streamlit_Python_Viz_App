@@ -2,6 +2,7 @@ import streamlit as st
 import gendergap
 import youtube_earnings
 import SessionState
+import wrapup_2020
 
 
 st.set_page_config(page_title='Visualization with Python',page_icon="📊")
@@ -65,7 +66,7 @@ def createlayout():
 
     app_check = {k: v[0] if isinstance(v, list) else v for k, v in app_check.items()}
     st.sidebar.title("Menu")
-    page_list = ["Homepage", "Gender Gap", "Popular YouTubers"]
+    page_list = ["Homepage", "Gender Gap", "Popular YouTubers", "2020 Wrapup"]
 #     default_selectbox = int(app_check["selectbox"]) if "selectbox" in app_check else 0
     default_selectbox = int(app_check["selectbox"]) if "selectbox" in app_check else 0
     app_mode = st.sidebar.selectbox("Please select a page", page_list,index = default_selectbox)
@@ -81,6 +82,8 @@ def createlayout():
             gendergap.load_page()
         elif app_mode == "Popular YouTubers":
             youtube_earnings.load_page()
+        elif app_mode == "2020 Wrapup":
+            wrapup_2020.viz_page()
         
         
  # the controller of the homepage
