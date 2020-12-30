@@ -1,0 +1,6 @@
+streamlit==0.73.0
+numpy==1.17.2
+pandas==0.25.1
+plotly==4.4.1
+psutil==5.8.0
+kaleido==0.1.0
