@@ -5,4 +5,4 @@ plotly==4.4.1
 psutil==5.8.0
 kaleido==0.1.0
 
-https://anaconda.org/plotly/plotly-orca/1.3.1/download/linux-64/plotly-orca-1.3.1-1.tar.bz2
+git+https://github.com/plotly/orca.git@v1.3.1
