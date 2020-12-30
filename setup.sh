@@ -7,3 +7,5 @@ port = $PORT\n\
 enableCORS = false\n\
 \n\
 " > ~/.streamlit/config.toml
+
+conda install -c plotly plotly-orca --yes
