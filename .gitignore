@@ -138,3 +138,7 @@ goal.txt
 #work in progress
 *data*.csv
 data*.ipynb
+
+.dockerignore
+Dockerfile
+/Users/anitaokoh/work_in_progress/project_repo/Streamlit_Python_Viz_App/environment.yml

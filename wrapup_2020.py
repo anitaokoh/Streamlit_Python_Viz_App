@@ -5,6 +5,7 @@ import plotly.express as px
 from other_app_py_files.year_wrapup_viz import create_fig as fig_annot
 from other_app_py_files.year_wrapup_viz_without_annotation import create_fig as fig_no_annot
 import numpy as np
+# import chart_studio.plotly as py
 import base64
 
 #App data
@@ -87,16 +88,17 @@ def get_annotations_coordinates(max_month_content, min_month_content, min_text, 
     return min_content,max_content
 
 
-def get_table_download_link(data):
-    """
-    Generates a link allowing the data in a given panda dataframe to be downloaded
-    in:  dataframe
-    out: href string
-    """
-    figure = data.to_image(format="png")
-    b64 = base64.b64encode(figure).decode()  
-    href = f'<a href="data:file/image;base64,{b64}" download="My 2020 in a wrap.png">Download chart</a>'
-    return href
+# def get_table_download_link(data):
+#     """
+#     Generates a link allowing the data in a given panda dataframe to be downloaded
+#     in:  dataframe
+#     out: href string
+#     """
+#     # figure = data.to_image(format="png")
+#     figure = py.image.save_as(data,image='png')
+#     b64 = base64.b64encode(figure).decode()  
+#     href = f'<a href="data:file/image;base64,{b64}" download="My 2020 in a wrap.png">Download chart</a>'
+#     return href
 
 
 
@@ -175,9 +177,9 @@ def viz_page():
                                 #the annotated chart
                                     fig = fig_annot(df, emotions_list,emotion_scale, min_content, max_content)
                                     st.plotly_chart(fig,use_container_width=True, config={'displayModeBar': False})
-                                    if st.button('Export Vizualization image'):
-                                        st.text('Ready to Download')
-                                        st.markdown(get_table_download_link(fig), unsafe_allow_html=True)
+                                    # if st.button('Export Vizualization image'):
+                                    #     st.text('Ready to Download')
+                                    #     st.markdown(get_table_download_link(fig), unsafe_allow_html=True)
 
            # the non-annotated chart
             else: 
@@ -190,9 +192,9 @@ def viz_page():
                     st.plotly_chart(fig,use_container_width=True, config={'displayModeBar': False})
             
                     
-                    if st.button('Export Vizualization image'):
-                        st.text('Ready to Download')
-                        st.markdown(get_table_download_link(fig), unsafe_allow_html=True)
+                    # if st.button('Export Vizualization image'):
+                    #     st.text('Ready to Download')
+                    #     st.markdown(get_table_download_link(fig), unsafe_allow_html=True)
 
 
 
