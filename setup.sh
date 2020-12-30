@@ -8,4 +8,4 @@ enableCORS = false\n\
 \n\
 " > ~/.streamlit/config.toml
 
-echo Python/Conda
+
