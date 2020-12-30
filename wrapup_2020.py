@@ -5,8 +5,8 @@ import plotly.express as px
 from other_app_py_files.year_wrapup_viz import create_fig as fig_annot
 from other_app_py_files.year_wrapup_viz_without_annotation import create_fig as fig_no_annot
 import numpy as np
-import chart_studio.plotly import image as PlotlyImage
-from PIL import Image as PILImage
+from chart_studio.plotly import image as py
+# from PIL import Image as PILImage
 import base64
 
 #App data
@@ -96,7 +96,7 @@ def get_table_download_link(data):
     out: href string
     """
     # figure = data.to_image(format="png")
-    figure =  PlotlyImage.get(data)
+    figure =  py.get(data)
     b64 = base64.b64encode(figure).decode()  
     href = f'<a href="data:file/image;base64,{b64}" download="My 2020 in a wrap.png">Download chart</a>'
     return href
