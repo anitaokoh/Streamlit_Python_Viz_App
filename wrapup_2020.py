@@ -5,8 +5,6 @@ import plotly.express as px
 from other_app_py_files.year_wrapup_viz import create_fig as fig_annot
 from other_app_py_files.year_wrapup_viz_without_annotation import create_fig as fig_no_annot
 import numpy as np
-# from chart_studio.plotly import image as py
-# from PIL import Image as PILImage
 import plotly.io
 import base64
 
@@ -180,9 +178,9 @@ def viz_page():
                                 #the annotated chart
                                     fig = fig_annot(df, emotions_list,emotion_scale, min_content, max_content)
                                     st.plotly_chart(fig,use_container_width=True, config={'displayModeBar': False})
-                                    # if st.button('Export Vizualization image'):
-                                    #     st.text('Ready to Download')
-                                    #     st.markdown(get_table_download_link(fig), unsafe_allow_html=True)
+                                    if st.button('Export Vizualization image'):
+                                        st.text('Ready to Download')
+                                        st.markdown(get_table_download_link(fig), unsafe_allow_html=True)
 
            # the non-annotated chart
             else: 
